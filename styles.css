@@ -1,0 +1,109 @@
+/* Título en la parte superior central */
+.site-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333; /* Cambia este color si es necesario */
+    margin-top: 60px; /* Espacio en la parte superior */
+    margin-bottom: 40px; /* Espacio entre el título y el contenido principal */
+    font-family: 'Arial', sans-serif; /* Usa la misma fuente que el resto del sitio */
+}
+
+html, body {
+    height: 90%; /* Asegura que el HTML y el body ocupen el 100% de la ventana */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imgfondo1.jpg'); /* Agrega aquí la ruta de tu imagen de fondo */
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: #f4f4f4; /* Fallback color en caso de que la imagen no cargue */
+    margin: 0;
+    padding: 0;
+}
+
+.main-screen {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.right-side {
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.assistant-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 24px;
+}
+
+p {
+    text-align: left;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Estilos de la pantalla de diagnóstico */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.result, .medications {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

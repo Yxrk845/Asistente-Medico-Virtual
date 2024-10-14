@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente Médico Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="site-title">DOCBOT</h1>
+    <!-- Pantalla Principal -->
+    <div class="main-screen" id="main-screen">
+        <div class="main-content">
+            <!-- Mitad Izquierda: Imagen -->
+            <div class="left-side">
+                <img src="docbot.jpg" alt="Imagen del asistente" class="assistant-image">
+            </div>
+            <!-- Mitad Derecha: Nombre y Descripción -->
+            <div class="right-side">
+                <h1>Asistente Médico Virtual</h1>
+                <p>¡Bienvenido a DocBot, tu asistente virtual médico! DocBot es una inteligencia artificial diseñada para ofrecer información de salud confiable y apoyo en la gestión de tu bienestar.Aquí podrás ingresar tus síntomas y obtener un diagnóstico preliminar.
+                <button id="start-diagnosis-btn">Iniciar Diagnóstico</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Diagnóstico -->
+    <div class="container" id="diagnosis-screen" style="display: none;">
+        <h1>Diagnóstico Médico</h1>
+        <p>Ingresa tus síntomas y te ayudaremos a inferir un posible diagnóstico.</p>
+
+        <form id="symptom-form">
+            <label for="symptoms">Síntomas (separados por comas):</label>
+            <input type="text" id="symptoms" placeholder="Ej: fiebre, dolor de cabeza">
+            <button type="submit">Consultar</button>
+        </form>
+
+        <div id="result" class="result"></div>
+        <div id="medications" class="medications"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
